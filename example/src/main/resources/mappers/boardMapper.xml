@@ -7,7 +7,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <mapper namespace="board">
 
 	<select id="boardList" resultType="com.board.example.dto.BoardDTO">
-	SELECT * FROM  board
+	select bno,title,writer,regdate,viewcnt from board
 	</select>
 
 </mapper>
